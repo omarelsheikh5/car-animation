@@ -50,6 +50,10 @@ background-color:rgba(19, 29, 18, 0.608) ;
 padding: 10px ;
         }
 
+ ul li:hover{
+            background-color: rgba(43, 43, 48, 0.341);
+            
+        }
 
         .bc{
             
