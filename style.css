@@ -1,0 +1,140 @@
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.item1{
+    background-color: gainsboro;
+    width: 25%;
+    height: 900px;
+    flex: 6 5 auto;
+    justify-content: center;
+    }
+
+    .item2{
+        background-color: red;
+        width: 50%;
+        height: 900px;
+        flex-basis: 500px;
+        flex: 6 5 auto;
+        }
+
+        ul{
+            list-style: none;
+            background-color: gainsboro;
+            flex: 6 5 auto;
+            text-align: center;
+            
+            width: 25%;
+        }
+
+        ul li a{
+            text-decoration: none;
+           
+            color: rgb(228, 228, 228);
+            
+        }
+
+        ul li{
+            margin: 0px 0;
+            border-bottom: 3px gainsboro solid;
+background-color:rgba(19, 29, 18, 0.608) ;
+padding: 10px ;
+        }
+
+
+        .bc{
+            
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            margin:auto;
+            animation: bc 2s ease-in-out infinite;
+            border-radius: 5px;
+        }
+
+
+        @keyframes bc{
+
+from{transform: translate(50%,0%);}
+to{transform: translate(50%,1700%);}
+
+
+}
+
+
+
+.gc{
+    background-color: greenyellow;
+    width: 50px;
+    height: 50px;
+    margin-top: -50px;
+    animation: gc 3s ease-in-out infinite;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+@keyframes gc{
+
+    from{transform: translate(50%);}
+    to{transform: translate(50%,1700%);}
+}
+
+
+.bc:hover{
+    animation-play-state: paused;
+    background-color: #003;
+}
+
+
+
+.gc:hover{
+    animation-play-state: paused;
+    background-color: #003;
+}
+
+
+@media screen and (min-width:200px) and (max-width:450px) {
+
+.bc{
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+    margin:auto;
+    animation: bc 2s ease-in-out infinite;
+    border-radius: 5px;
+}
+
+@keyframes bc{
+
+    from{transform: translate(50%,0%);}
+    to{transform: translate(50%,2900%);}
+    
+    
+    }
+
+.gc{
+    background-color: greenyellow;
+    width: 30px;
+    height: 30px;
+    margin-top: -50px;
+    animation: gc 3s ease-in-out infinite;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+@keyframes gc{
+
+    from{transform: translate(50%);}
+    to{transform: translate(50%,2950%);}
+}
+    
+}
