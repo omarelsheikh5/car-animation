@@ -2,7 +2,7 @@
 *{
     padding: 0;
     margin: 0;
-
+font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
@@ -41,6 +41,7 @@
            
             color: rgb(228, 228, 228);
             
+            
         }
 
         ul li{
@@ -48,12 +49,16 @@
             border-bottom: 3px gainsboro solid;
 background-color:rgba(19, 29, 18, 0.608) ;
 padding: 10px ;
+
+
+
         }
 
- ul li:hover{
+        ul li:hover{
             background-color: rgba(43, 43, 48, 0.341);
             
         }
+
 
         .bc{
             
