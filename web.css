@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:rgba(255, 255, 255, 0.167);
+
+}
+
+/*Nav Bar*/
+
+nav{
+    display: flex;
+justify-content: space-between;
+text-align: center;
+background:linear-gradient(#005,#007);
+}
+
+
+ul{
+    list-style: none;
+    margin: 10px 8px;
+}
+ul li a{
+    text-decoration: none;
+    font-weight:500;
+    color: #fff;
+    
+}
+
+ul li{
+display:inline-block;
+margin: 5px 15px;
+}
+
+ul li a:hover{
+    
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.logo{
+    margin: auto 60px;
+    color: rgba(0, 33, 221, 0.758);
+    font-size: 20px;
+}
+
+/*Header*/
+
+header{
+    display: flex;
+    justify-content: center;
+width: 100%;
+height: 120vh;
+background: linear-gradient(#003,#009);
+text-align: center;
+}
+
+
+.content-header1{
+    background-color: rgba(255, 255, 255,0.1);
+    padding: 0 50px;
+    margin-top: 35px;
+    margin-bottom: 366px;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-grow: 1;
+}
+
+
+.appear-effecth{
+    margin: 2px 0;
+    padding-top: 65px;
+    padding-bottom: 35px;
+    color: white;
+    text-align: center;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 18% cover 65%;
+  }
+
+
+    @keyframes appear {
+        from {
+          opacity: 0;
+          scale: 0.1;
+        }
+        to {
+          opacity: 1;
+          scale: 1;
+        }
+      }
+
+      .content-header1-btn{
+background-color: #003;
+color: white;
+margin-top: 25px;
+width: 100px;
+padding: 10px;
+border-radius: 20px;
+cursor: pointer;
+      }
+
+      .content-header1-btn:hover{
+        background:black;
+        color: white;
+        margin-top: 25px;
+        width: 100px;
+        padding: 10px;
+        border-radius: 20px;
+              }
+
+/*Media Query*/
+
+@media screen and (min-width:150px) and (max-width:600px){
+
+    .content-header1{
+        background-color: rgba(255, 255, 255,0.1);
+        padding: 0 30px;
+        margin-top: 35px;
+        margin-bottom: 450px;
+        border-radius: 25px;
+        margin-left: px;
+        margin-right: px;
+        flex-grow: 1;
+        flex-shrink: 5;
+    }
+    
+img{
+    width: 200px;
+}
+
+.appear-effecth{
+    margin: 2px 0;
+    padding-top: 32.5px;
+    padding-bottom: 35px;
+    color: white;
+    text-align: center;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 18% cover 65%;
+  }
+
+
+}
